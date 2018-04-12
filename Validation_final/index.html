@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input validation</title>
+</head>
+<!-- onload="f1()" -->
+<body >
+    <h2>Enter your details</h2>
+ 
+    
+        <p> Enter id: &nbsp; &nbsp; &nbsp;
+            <input type="number" id="id" onclick="i1()"> </p>
+
+        <p>Enter Name:
+            <input type="text" id="name" onkeyup="i2()" onclick="i2()"> </p>
+
+
+        <p>Enter City Name:
+            <input type="text" id="city" onkeyup="i4()" onclick="i4()"> </p>
+
+
+        <p>Enter your phone number:
+            <input type="number" id="number" onkeyup="i5()" onclick="i5()"> </p>
+
+
+        <p>Select you gender:
+            <div id="r">
+                <input type="radio" name="gender" onclick="i3()" value="Male"> Male &nbsp;
+                <input type="radio" name="gender" onclick="i3()" value="female"> Female
+            </div>
+        </p>
+
+
+
+        <input type="submit" value="Submit" onclick="validate(); rtbl()">
+        <!-- <input type="reset" value="Reset" onclick="clr()"> -->
+
+    <br><br>
+   <!-- <input type="button" value="show saved data" onclick="print()"> -->
+    <center>
+   <div id="tbl"></div> </center>
+    <script src="./app.js"></script>
+</body>
+
+</html>
